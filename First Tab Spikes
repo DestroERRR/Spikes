@@ -1,0 +1,42 @@
+# Spikes
+epic
+/*Making Spikes in Processing!
+Jason.S Programming 11
+*/
+
+ArrayList<Spikes> mySpikes;
+
+void setup(){
+ size(800,800);
+ fill(255);
+ 
+ 
+ mySpikes = new ArrayList<Spikes>();
+ 
+ int i = 0;
+ while(i<100){
+  
+    mySpikes.add( new Spikes() );
+     i++;
+   
+ }
+  
+}
+
+
+void draw(){
+  background(255);
+  int i = 0;
+  while(i<100){
+   Spikes s = mySpikes.get(i);
+   s.act();
+   s.show();
+   i++;
+  }
+  
+  
+  
+  
+  
+  
+}
